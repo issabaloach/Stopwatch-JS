@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="mx-5 my-3 p-2 bg-dark md">
+       <h1 class="mt-6 text-center text-white bg-info bg-opacity-10 border border-info border-start-0 rounded-end">StopWatch</h1>
+       <div class=" md bg-gradient d-flex justify-content-center border border-top-0  p-2 fs-1 mt-5  gap-3 text-white">
+        <div id="mins">00  </div> :
+                        
+        <div id="seconds"> 00  </div> : 
+
+        <div id="milliSec">00</div> 
+       </div>
+       <span class="d-flex justify-content-center gap-3 text-white ">
+        <h4>Min</h4>
+        <h4>Sec</h4>
+        <h4>MS</h4>
+       </span>
+      
+<div class="d-flex justify-content-center  p-2 gap-3 fs-2 mt-3 fw-bold  ">
+    <button id="start-btn" type="button" class="btn btn-outline-primary rounded-pill focus-ring focus-ring-danger text-white" onclick="start()">Start</button>
+    <button type="button" class="btn btn-outline-success rounded-pill focus-ring focus-ring-danger text-white" onclick="stop()">Stop</button>
+     <button  type="button" class="btn btn-outline-info rounded-pill focus-ring focus-ring-danger text-white"  onclick="reset()">Reset</button>
+</div>
+       <script src="script.js"></script>
+</body>
+</html>
